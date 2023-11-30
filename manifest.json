@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Nur Net | The Explicit Content Blocker",
+    "version": "1.0",
+    "description": "Embark on a digital purification journey with Nur Net, your beacon of virtue in the online realm. This extension, rooted in Islamic values, not only shields you from explicit content but lovingly redirects you towards enlightenment. Transform your online experience into a sanctuary, where every blocked site becomes an opportunity to explore daawah videos, Qur'anic wisdom, and guides on overcoming harmful addictions. Nur Net isn't just an extension; it's your companion in becoming the best version of your Muslim self. Embrace the path of purity and tranquility with every click.  let Nur Net illuminate your digital world.",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "unlimitedStorage",
+        "alarms"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/NurNet.png",
+            "48": "images/NurNet.png",
+            "128": "images/NurNet.png"
+        }
+    },
+    "icons": {
+        "16": "images/NurNet.png",
+        "48": "images/NurNet.png",
+        "128": "images/NurNet.png"
+    }
+}
