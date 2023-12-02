@@ -51,7 +51,7 @@ async function fetchBlockedWebsites(blocklistURL) {
     }
 }
 chrome.alarms.create("myAlarm", {
-    periodInMinutes: 0.1
+    periodInMinutes: 0.3
 });
 chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === "myAlarm") {
@@ -121,3 +121,4 @@ function getRandomLink() {
     return links[Math.floor(Math.random() * links.length)];
 }
 fetchFirstTime();
+
